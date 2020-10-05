@@ -4,6 +4,9 @@ RUN apt-get update
 RUN apt-get install -y nginx
 
 WORKDIR /app
+
+RUN ["dotnet", "build"]
+
 COPY bin/Debug/netcoreapp3.1/* .
 
 COPY ./startup.sh .
