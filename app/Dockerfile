@@ -1,4 +1,4 @@
-FROM dotnet/dotnet-31-runtime-rhel7:3.1-11
+FROM appsvc/dotnetcore
 
 RUN apt-get update
 RUN apt-get install -y nginx
